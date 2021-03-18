@@ -18,6 +18,22 @@ const Cards = ({ details }) => {
             <span>{`${details.name?.title}. ${details.name?.first} ${details.name?.last}`}</span>
           </h2>
         </CardTitle>
+        <CardText>
+          <FaMapMarked />
+          {` ${details.location?.city}`}
+          <p>
+            <div>
+              <FaPhone />
+              {` ${details.cell}`}
+            </div>
+          </p>
+          <h4>
+            <div>
+              <FaEnvelope />
+              {` ${details.email}`}
+            </div>
+          </h4>
+        </CardText>
       </CardBody>
     </Card>
   );
